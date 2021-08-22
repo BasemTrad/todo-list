@@ -1,7 +1,8 @@
-import logo from "./logo.svg";
+
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route,  } from "react-router-dom";
 import Login from "./login";
+import Todo from './todo';
 
 function App() {
   function sign() {
@@ -15,6 +16,12 @@ function App() {
   return (
     <Router>
       <Switch>
+
+        <Route path="/todo">
+
+          <Todo />
+
+        </Route>
         <Route path="/login">
          <Login />
         </Route>
@@ -28,6 +35,7 @@ function App() {
               <button onClick={signup}>sign up</button>
             </div>
           </Route>
+          
           
       </Switch>
     </Router>

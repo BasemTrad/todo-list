@@ -7,15 +7,14 @@ function Login() {
         window.location.href = "/todo";
       }
     return(
-        <div className="login">
-            <h1>log in</h1>
-            <div><label htmlFor="Email">Email</label></div>
-            <input type="text" className="" placeholder="Email"  NoValidate  />
-            <div><label htmlFor="Email">Password</label></div>
-            <input type="text" className="" placeholder="Password"  NoValidate  />
-
-            <button onClick={Submit}>Submit</button>
-          </div>
+      <div className="body">
+     <form className="box" action="index.html"  method="post">
+       <h1>Login</h1>
+       <input type="text" name="" placeholder="Username" />
+       <input type="password" name="" placeholder="Password" />
+        <input type="submit" name="" value="Login" />
+     </form>
+     </div>
 
     );
 }

@@ -32,16 +32,17 @@ function App() {
             <div>
               <h1>
                 {" "}
-                <span className="font-weigth-bold">My Website</span>.com
+                <span >My Website</span>.com
               </h1>
-              <h3>Welcom</h3>
+              <h2> Welcom</h2>
             </div>
-            <div>
-              <button onClick={sign}>log in</button>{" "}
-            </div>
-            <div className="on">
-              <button onClick={signup}>sign up</button>
-            </div>
+            <div className="container">
+
+
+              <button onClick={sign} className="btn-1">log in</button>
+            
+              <button onClick={signup} className="btn-2">sign up</button>
+          </div>
           </div>
         </Route>
       </Switch>

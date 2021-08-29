@@ -7,20 +7,16 @@ function Signup() {
         window.location.href = "/todo";
       }
     return(
-        <div className="Signup">
-            <h1>Sign Up</h1>
-            <div><label htmlFor="Email">Email</label></div>
-            <input type="text" className="" placeholder="Email"  NoValidate  />
+      <div className="long">
+      <form className="bad" action="index.html"  method="post">
+        <h1>Sign up</h1>
+        <input type="email" className="input-box" placeholder="Your Email" />
+        <input type="username" className="input-box" placeholder="Username" />
+        <input type="password" className="input-box" placeholder="Password" />
 
-            <div><label htmlFor="UserName">User Name</label></div>
-            <input type="text" className="" placeholder="UserName"  NoValidate  />
-
-            
-            <div><label htmlFor="Password">Password</label></div>
-            <input type="text" className="" placeholder="Password"  NoValidate  />
-
-            <button onClick={Submit}>Submit</button>
-          </div>
+         <input type="submit" name="" value="signup" />
+      </form>
+      </div>
 
     );
 }

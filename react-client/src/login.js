@@ -8,12 +8,15 @@ function Login() {
       }
     return(
       <div className="body">
-     <form className="box" action="index.html"  method="post">
-       <h1>Login</h1>
-       <input type="text" name="" placeholder="Email" />
+        <div className="box">
+     <form >
+       <h1 className="bg-black rounded">Login</h1>
+       <input type="text" name="" placeholder="Email"  />
        <input type="password" name="" placeholder="Password" />
-        <input type="submit" name="" value="Login" />
+        
      </form>
+     <button onClick={submit}> Login  </button>
+     </div>
      </div>
 
     );

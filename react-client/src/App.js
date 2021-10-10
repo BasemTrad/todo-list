@@ -17,6 +17,7 @@ function App() {
   return (
     <Router>
       <Switch>
+      
         <Route path="/todo">
           <Todo />
         </Route>
@@ -36,7 +37,7 @@ function App() {
               </h1>
               <h2> Welcom</h2>
             </div>
-            <div className="container">
+            <div className="App container">
 
 
               <button onClick={sign} className="btn-1">log in</button>
